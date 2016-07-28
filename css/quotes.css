@@ -1,0 +1,136 @@
+/*===== GENERAL =====*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background: #f1d2bd url("../open_books.jpg") no-repeat fixed center center / cover;
+}
+
+a {
+    text-decoration: none;
+    color: #0e3a67;
+}
+
+a:hover {
+    border-bottom: 1px dotted;
+}
+
+
+/*===== MAIN =====*/
+
+.main {
+    max-width: 600px;
+    margin: 10em auto 3em;
+    padding: 1.5em 2em;
+    background: #fffff0;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 3px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);
+}
+
+.quote-box {
+    -moz-display: flex;
+    -webkit-display: flex;
+    display: flex;
+    -moz-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 15em;
+}
+
+.main h1 {
+    font-size: 1.875em;
+}
+
+.main h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+#quote {
+    font-size: 1.25em;
+}
+
+#author {
+    font-size: 1.125em;
+}
+
+#new-quote,
+#tweet-quote {
+    display: block;
+    width: 8em;
+    margin: 0 auto 1em;
+    padding: 0.5em;
+    background: #f1d2bd;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    border-radius: 2px;
+}
+
+#new-quote {
+   margin-top: 5em;
+}
+
+#tweet-quote {
+    color: inherit;
+}
+
+#new-quote:hover,
+#tweet-quote:hover {
+    background: #fffff0;
+    border: 2px solid #f1d2bd;
+}
+
+
+/*===== FOOTER =====*/
+
+footer {
+    text-align: center;
+    padding: 4em 0 0 0;
+    font-size: 0.625em;
+}
+
+footer a {
+    color: #415f7e;
+}
+
+footer a:hover {
+    border-bottom: 1px dotted;
+}
+
+
+/*===== MEDIA QUERIES =====*/
+
+@media screen and (min-width: 25em) {
+    #new-quote,
+    #tweet-quote {
+        display: initial;
+        margin: 5em 1em 1em;
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+
+    footer p:first-child {
+        float: left;
+    }
+
+    footer p:nth-child(2) {
+        float: right;
+    }
+}
